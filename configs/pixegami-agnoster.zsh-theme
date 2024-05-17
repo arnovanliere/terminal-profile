@@ -162,7 +162,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  # prompt_segment 008 010 $(basename `pwd`) 
+  prompt_segment 008 010 $(basename `pwd`) 
 }
 
 # Virtualenv: current working virtualenv
@@ -194,11 +194,11 @@ prompt_head() {
 ## Main prompt
 build_prompt() {
   RETVAL=$?
-  prompt_head
+  # prompt_head
   prompt_status
   prompt_virtualenv
   prompt_context
-  # prompt_dir
+  prompt_dir
   prompt_git
   prompt_bzr
   prompt_hg
