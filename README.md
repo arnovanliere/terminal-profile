@@ -16,6 +16,9 @@ sudo apt-get install -y git
 
 # Install Vim.
 sudo apt-get install -y vim
+
+# Install Delta as Git pager.
+sudo apt-get install -y git-delta
 ```
 
 # Installation
