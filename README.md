@@ -57,3 +57,22 @@ to be the Fira Code one we installed earlier (required for the theme to display 
 ./install_profile.sh
 ```
 
+### Vim
+
+Download `vim-plug` and `fzf`.
+
+```bash
+# Download vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Install fzf
+sudo apt install fzf
+```
+
+Copy the `./configs/.vimrc` to your home directory (`cp configs/.vimrc ~/`).
+
+Install the plugins and language support within Vim by opening vim and running:
+
+`:PlugInstall` and `:CocInstall coc-json coc-tsserver coc-pyright coc-go coc-html`.
+
