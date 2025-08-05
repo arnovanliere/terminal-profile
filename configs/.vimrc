@@ -39,9 +39,6 @@ set hlsearch
 
 " FILE HANDLING
 set hidden
-set backup
-set undofile
-set swapfile
 
 " STATUS LINE
 set laststatus=2
