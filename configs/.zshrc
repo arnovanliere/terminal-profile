@@ -37,3 +37,18 @@ setopt HIST_EXPIRE_DUPS_FIRST
 # Keybindings
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
+
+# Aliases
+alias gake="./bin/goyek"
+alias gs="git status"
+alias gaa="git add ."
+alias gcm="git commit -m"
+alias grp="git rebase prerelease"
+alias grd="git rebase development"
+alias gp="git push"
+alias gpt="git push --tags"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Bun completions, uncomment if Bun is installed
+# [ -s "/home/arno/.bun/_bun" ] && source "/home/arno/.bun/_bun"
