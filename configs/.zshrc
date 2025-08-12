@@ -47,6 +47,16 @@ alias grp="git rebase prerelease"
 alias grd="git rebase development"
 alias gp="git push"
 alias gpt="git push --tags"
+alias gckm="git checkout master"
+alias gckp="git checkout prerelease"
+alias gckd="git checkout development"
+alias gck="git checkout"
+
+gacp() {
+    git add .
+    git commit -m "$1"
+    git push
+}
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
