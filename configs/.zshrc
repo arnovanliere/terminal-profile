@@ -50,12 +50,19 @@ alias gpt="git push --tags"
 alias gckm="git checkout master"
 alias gckp="git checkout prerelease"
 alias gckd="git checkout development"
+alias gckv2="git checkout v2"
 alias gck="git checkout"
 
 gacp() {
     git add .
     git commit -m "$1"
     git push
+}
+
+gacpt() {
+    gacp "$1"
+    git tag "$1"
+    gpt
 }
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
